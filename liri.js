@@ -63,9 +63,9 @@ inquirer.prompt({
                             newTime = moment(newTime).format("MM/DD/YYYY");
                             console.log(`
 ==================================================
-${obj[i].lineup} EVENT NUMBER ${i}
+${obj[i].lineup} EVENT NUMBER: ${i}
 ==================================================
-${chalk.blue.bold(`* Name of venue: ${obj[i].venue.name}
+${chalk.yellow.bold(`* Name of venue: ${obj[i].venue.name}
 * Location of venue: ${obj[i].venue.country}, ${obj[i].venue.city}
 * Date of event: ${newTime}\n`)}`);
                         }
@@ -85,11 +85,11 @@ ${chalk.blue.bold(`* Name of venue: ${obj[i].venue.name}
                 if (err) throw err;
                 console.log(`
 =========================================================
-INFO REGARDING THE SONG ${body.tracks.items[0].name}
+INFO REGARDING THE SONG: ${body.tracks.items[0].name}
 =========================================================
-${chalk.blue.bold(`* Artist: ${body.tracks.items[0].artists[0].name}
+${chalk.yellow.bold(`* Artist: ${body.tracks.items[0].artists[0].name}
 * Name of song: ${body.tracks.items[0].name}
-* To play the song click on the following link: ${chalk.magenta.underline(`${body.tracks.items[0].preview_url}`)}
+* To play the song click on the following link: ${chalk.green.underline(`${body.tracks.items[0].preview_url}`)}
 * The song's album is called: ${body.tracks.items[0].album.name}\n`)}`);
             });
             // var urlQuery=`https://api.spotify.com/v1/tracks/7yCPwWs66K8Ba5lFuU2bcx`;
@@ -116,9 +116,9 @@ ${chalk.blue.bold(`* Artist: ${body.tracks.items[0].artists[0].name}
                     //console.log(json);
                     console.log(`
 ============================================
-INFORMATION ABOUT ${json.Title}
+INFORMATION ABOUT: ${json.Title}
 ============================================
-${chalk.blue.bold(`* Year movie came out is: ${json.Year}
+${chalk.yellow.bold(`* Year movie came out is: ${json.Year}
 * IMDB movie rating: ${json.imdbRating} 
 * Country of production: ${json.Country}
 * Movie plot: ${json.Plot}
