@@ -1,4 +1,8 @@
 **/node_modules
 **/.DS_Store
+<<<<<<< HEAD
 **/.env
 **/questions.js
+=======
+**/.env
+>>>>>>> aa79bc77dc99d2d25626709e71cb6b7e69c15a60
